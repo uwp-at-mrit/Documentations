@@ -1,0 +1,47 @@
+This file contains a cumulative summary of changes to the IHO S-64 [S-63 TDS]
+
+
+1) Summary of changes from S-63 v1.0 to v1.1
+--------------------------------------------
+
+This was a revision of the test data and accompanying scripts based on extensive feedback from OEMs.
+
+
+2) Summary of changes from S-63 v1.1 to v1.2
+--------------------------------------------
+
+TESTS 7D, 7E & 7E
+
+The STATUS.LST file has been added to Tests 7d, 7e and 7f. This file had originally been omitted.
+
+TEST 7F
+
+This test has been reworked as the original test for versions 1.1 and earlier was flawed.
+
+TEST 7H
+
+The location of Base Cell, GB50162B.000 was incorrectly identified as "B2" in the PRODUCTS.TXT file on the update media. This has been corrected in the PRODUCTS.TXT file as "B3".
+
+TEST 8C
+
+M01X02 Base Media - PRODUCTS.TXT File
+GB100004.000 - Change "M1;U1" to "M1;B1"
+Reason being if the update media was unavailable the system must be able to load from the base media.
+
+TEST 8D
+
+Correct the format and contents as follows:
+
+1. BASE MEDIA, MEDIA.TXT file was missing the second header line. This has been corrected in v1.2.
+
+2. UPDATE MEDIA, STATUS.LST file header was not consistent with the MEDIA.TXT file. This has been corrected on v1.2.
+
+3. Amend PRODUCTS.TXT file on UPDATE media for cell GB100001 for consistency with the BASE media.
+
+4. Amend PRODUCTS.TXT file on UPDATE media for cell GB100004 (Update 10) for consistency with this UPDATE Exchange Set.
+
+TEST 8C
+
+Delete reference to GB40164A in the "Expected SENC Status" table in the "Test Definitions and Scripts.doc" file.
+
+Minor Amendments to Test Scripts for tests 7H, 7I and 7J.
